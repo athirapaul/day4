@@ -10,49 +10,10 @@ import Foundation
 
 print("Hello, World!")
 
-class Person{
-    var pid : Int = 0
-    var fname : String! //optional wrapping...there is always a value
-    var lname : String? //may contain nil or contain value....if nil then do as it in display function
-    func setData(){
-        fname = "athira"
-        lname = "Paul"
-    }
-    func display(){
-        print(pid)
-        if let f = fname,let l = lname{
-            let s = f + " " + l
-            print(s)
-        }
-    }
-}
+
 var p1 = Person()
 p1.setData()
 p1.display()
-
-
-
-
-class Student {
-    var sid : Int
-    var fname : String //optional wrapping...there is always a value
-    var lname : String
-    init() {
-        sid = 0
-        fname = String()
-        lname = String()
-    }
-        init(sid:Int, fname : String, lname: String){
-            self.sid = sid
-            self.fname = fname
-            self.lname = lname
-        }
-    func display(){
-        print("student id :\(self.sid)")
-        print("student fname :\(self.fname)")
-        print("student lname :\(lname)")
-    }
-    }
 
 var s1 = Student()
 s1.display()
@@ -67,3 +28,9 @@ for j in array
 {
     j.display()
 }
+var c1 = Car()
+
+c1.id = 3
+c1.model = "toyota"
+c1.color = "blue"
+c1.speed = 250
